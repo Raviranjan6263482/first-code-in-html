@@ -1,0 +1,89 @@
+
+<!-- saved from url=(0031)http://127.0.0.1:5500/form.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ENQUIRY FORM</title>
+    </head><body>  
+  <form>
+    <label for="Name">Name: </label>
+   <input type="text" id="Name">    <br> <br>
+
+   <label for="father&#39;s name">Father's Name:</label>
+   <input type="text" id="father&#39;s name">  <br> <br>
+
+   <label for="mothers name">Mother's Name:</label>
+   <input type="text" id="mothers name">  <br> <br>
+
+   <p> Choose your Gender:</p>
+   <input type="radio" id="gender">
+   <label for="gender">Male</label>
+
+   <input type="radio" id="gender">
+   <label for="gender"> Female</label>  <br> <br>
+
+
+   <label for="email"> Email:</label>
+   <input type="email" id="email"> <br> <br>
+
+   <label for="number">Mobile No. :</label>
+   <input type="number" id="number"> <br> <br>
+
+   
+   <label for="DOB">DOB:</label>
+   <input type="date" id="DOB"> <br> <br>
+
+<p>Choose your favourite colour:</p>
+   
+   <label for="color">Colour:</label>
+   <input type="color" id="color">  <br> <br>
+
+   <label for="reset"></label>
+   <input type="reset" value="reset"> <br> <br>
+
+   <label for="submit"></label>
+   <input type="submit" value="submit">
+
+
+
+
+  </form>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+    
+</body></html>
